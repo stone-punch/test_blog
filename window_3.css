@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1f, 1f;
+}
+.days{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 50px;
+    grid-gap: 5px;
+
+    margin-left: 20px;
+    margin-right: 20px;
+
+    border: 1px solid black;
+    text-align: center;
+}
+.day{
+    border-left: 1px solid black;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: bold;
+
+}
+.day:nth-child(1){
+    border-left: 1px solid white;
+}
+
+.dates{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 50px);
+    grid-gap: 5px;
+
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.date{
+    border: 1px solid black;
+}
+
